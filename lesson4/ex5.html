@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ex</title>
+    <style>
+      table {
+        background-color: cyan;
+        border-collapse: collapse;
+      }
+
+      tbody tr:nth-child(2n + 1) {
+        background-color: orange;
+      }
+
+      tbody tr:nth-child(2n + 2) {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Product</th>
+          <th scope="col">Quantity</th>
+          <th scope="col">Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Apple</td>
+          <td>34</td>
+          <td>$3.99/lb</td>
+        </tr>
+        <tr class="banana-row">
+          <td>Banana</td>
+          <td>69</td>
+          <td>$5.69/lb</td>
+        </tr>
+        <tr>
+          <td>Carrot</td>
+          <td>420</td>
+          <td>$1.49/lb</td>
+        </tr>
+        <tr class="kiwi-row">
+          <td>Kiwi</td>
+          <td>42</td>
+          <td>$2.99 ea.</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
