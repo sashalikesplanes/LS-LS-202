@@ -1,0 +1,96 @@
+html {
+  font-size: 28px;
+}
+
+body {
+  border: 2px solid black;
+  width: 680px;
+  padding: 10px 15px 15px 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+h1 {
+  font-size: 2rem;
+  font-family: Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+h2 {
+  font-size: 1rem;
+  border-top: 30px black solid;
+  border-bottom: 1px black solid;
+  padding: 10px 0;
+  margin: 5px 0 0 0;
+}
+
+header {
+  font-size: 0;
+  border-bottom: 15px solid black;
+  margin-bottom: 10px;
+}
+
+header dl {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 50%;
+  font-size: 1rem;
+  margin: 0;
+  padding: 5px 0;
+}
+
+header dl:nth-child(2n) {
+  text-align: right;
+}
+
+dl dt,
+dl dd {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+dl {
+  margin: 0;
+}
+
+tr dl:nth-child(2n + 1) {
+  text-align: left;
+}
+
+table {
+  box-sizing: border-box;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead th {
+  text-align: right;
+}
+
+tbody th {
+  font-weight: normal;
+  margin: 2px;
+}
+
+tr {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+tbody tr {
+  border-top: 1px black solid;
+}
+
+td {
+  text-align: right;
+}
+
+.indent {
+  width: 25px;
+}
