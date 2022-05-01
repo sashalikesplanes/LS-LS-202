@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ex1</title>
+  </head>
+  <body>
+    <form action="#" method="post">
+      <fieldset>
+        <dl>
+          <dt><label for="fName">First Name:</label></dt>
+          <dd><input type="text" name="fName" id="fName" required /></dd>
+          <dt><label for="lName">Last Name:</label></dt>
+          <dd><input type="text" name="lName" id="lName" required /></dd>
+          <dt><label for="email">Email address:</label></dt>
+          <dd>
+            <input
+              type="text"
+              name="email"
+              id="email"
+              required
+              autocomplete="off"
+              autocapitalize="none"
+            />
+          </dd>
+          <dt><label for="phoneType">Phone type:</label></dt>
+          <dd>
+            <select name="phoneType" id="phoneType">
+              <option value="home" selected>Home</option>
+              <option value="work">Work</option>
+              <option value="mobile">Mobile</option>
+            </select>
+          </dd>
+          <dt><label for="phone">Phone number:</label></dt>
+          <dd>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              required
+              placeholder="###-###-####"
+            />
+          </dd>
+
+          <dt><label for="message">Your message:</label></dt>
+          <dd>
+            <textarea
+              id="message"
+              name="message"
+              rows="6"
+              cols="80"
+              placeholder="Type your message here..."
+            ></textarea>
+          </dd>
+        </dl>
+        <input type="submit" value="Send" />
+      </fieldset>
+    </form>
+  </body>
+</html>
