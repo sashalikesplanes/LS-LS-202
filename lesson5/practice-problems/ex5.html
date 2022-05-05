@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form Exercise</title>
+  </head>
+  <body>
+    <form action="#" method="post">
+      <fieldset>
+        <dl>
+          <dt><label for="fname">First Name:</label></dt>
+          <dd><input type="text" id="fname" name="fname" required /></dd>
+          <dt><label for="lname">Last Name:</label></dt>
+          <dd><input type="text" id="lname" name="lname" required /></dd>
+          <dt><label for="email">Email:</label></dt>
+          <dd>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="example@example.com"
+            />
+          </dd>
+          <dt><label for="city">City:</label></dt>
+          <dd><input type="text" id="city" name="city" required /></dd>
+          <dt><label for="state">State:</label></dt>
+          <dd>
+            <select name="state" id="state">
+              <option value="ca">CA</option>
+              <option value="ny">NY</option>
+              <option value="ma">MA</option>
+            </select>
+          </dd>
+          <dt><label for="zip-code">Zip Code:</label></dt>
+          <dd>
+            <input
+              type="text"
+              id="zip-code"
+              name="zip-code"
+              pattern="[0-9]{5}"
+              required
+              placeholder="12345"
+            />
+          </dd>
+          <dt>What is your favorite color?</dt>
+          <dd>
+            <ul>
+              <li>
+                <label
+                  ><input
+                    type="radio"
+                    name="color"
+                    id="red"
+                    value="red"
+                    checked
+                  />Red</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input
+                    type="radio"
+                    name="color"
+                    id="pink"
+                    value="pink"
+                  />Pink</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input
+                    type="radio"
+                    name="color"
+                    id="blue"
+                    value="blue"
+                  />Blue</label
+                >
+              </li>
+            </ul>
+          </dd>
+          <dt>What web tech do you want to learn?</dt>
+          <dd>
+            <ul>
+              <li>
+                <label
+                  ><input type="checkbox" value="HTML" name="HTML" />HTML</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" value="CSS" name="CSS" />CSS</label
+                >
+              </li>
+              <li>
+                <label><input type="checkbox" value="JS" name="JS" />JS</label>
+              </li>
+            </ul>
+          </dd>
+          <dt>
+            <label for="comment">Add your comment here:</label>
+          </dt>
+          <dd>
+            <textarea id="comment" name="comment" rows="6" cols="80"></textarea>
+          </dd>
+        </dl>
+        <input type="hidden" name="datetime" id="datetime" value="2022-05-05" />
+        <input type="submit" value="Send" />
+        <input type="reset" value="Clear Form" />
+      </fieldset>
+    </form>
+  </body>
+</html>
