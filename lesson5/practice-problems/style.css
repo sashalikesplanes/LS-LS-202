@@ -6,20 +6,47 @@ fieldset {
   border: none;
   width: 400px;
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+dl {
+  padding: 0 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+dl.name {
+  width: 50%;
+}
+
+dl.state {
+  width: 20%;
+}
+
+dl.city {
+  width: 40%;
+}
+
+dl.zip {
+  width: 40%;
 }
 
 dd {
-  margin: 5px 0 20px;
+  margin: 0;
 }
 
 input[type="text"],
 input[type="email"],
+select,
 textarea {
   width: 100%;
   height: 20px;
   border-radius: 0;
   border-color: lightgray;
   box-shadow: none;
+  box-sizing: border-box;
+  border-bottom-style: solid;
 }
 
 textarea {

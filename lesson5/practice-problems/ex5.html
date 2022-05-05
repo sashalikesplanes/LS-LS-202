@@ -10,11 +10,15 @@
   <body>
     <form action="#" method="post">
       <fieldset>
-        <dl>
+        <dl class="name">
           <dt><label for="fname">First Name:</label></dt>
           <dd><input type="text" id="fname" name="fname" required /></dd>
+        </dl>
+        <dl class="name">
           <dt><label for="lname">Last Name:</label></dt>
           <dd><input type="text" id="lname" name="lname" required /></dd>
+        </dl>
+        <dl>
           <dt><label for="email">Email:</label></dt>
           <dd>
             <input
@@ -25,8 +29,12 @@
               placeholder="example@example.com"
             />
           </dd>
+        </dl>
+        <dl class="city">
           <dt><label for="city">City:</label></dt>
           <dd><input type="text" id="city" name="city" required /></dd>
+        </dl>
+        <dl class="state">
           <dt><label for="state">State:</label></dt>
           <dd>
             <select name="state" id="state">
@@ -35,6 +43,8 @@
               <option value="ma">MA</option>
             </select>
           </dd>
+        </dl>
+        <dl class="zip">
           <dt><label for="zip-code">Zip Code:</label></dt>
           <dd>
             <input
@@ -46,6 +56,8 @@
               placeholder="12345"
             />
           </dd>
+        </dl>
+        <dl>
           <dt>What is your favorite color?</dt>
           <dd>
             <ul>
@@ -82,6 +94,8 @@
               </li>
             </ul>
           </dd>
+        </dl>
+        <dl>
           <dt>What web tech do you want to learn?</dt>
           <dd>
             <ul>
@@ -100,6 +114,8 @@
               </li>
             </ul>
           </dd>
+        </dl>
+        <dl>
           <dt>
             <label for="comment">Add your comment here:</label>
           </dt>
